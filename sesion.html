@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Inicio de Sesión</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+
+  <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+    <h2 class="text-2xl font-semibold text-center text-gray-700 mb-6">Iniciar sesión</h2>
+
+    <form action="engaño.html" method="GET">
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-medium text-gray-600">Correo electrónico</label>
+        <input type="email" id="email" name="email" class="w-full mt-2 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Introduce tu correo" required>
+      </div>
+
+      <div class="mb-6">
+        <label for="password" class="block text-sm font-medium text-gray-600">Contraseña</label>
+        <input type="password" id="password" name="password" class="w-full mt-2 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Introduce tu contraseña" required>
+      </div>
+
+      <div class="flex justify-between items-center mb-6">
+        <div class="flex items-center">
+          <input type="checkbox" id="remember" name="remember" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+          <label for="remember" class="ml-2 text-sm text-gray-600">Recordarme</label>
+        </div>
+        <a href="#" class="text-sm text-indigo-600 hover:text-indigo-800">¿Olvidaste tu contraseña?</a>
+      </div>
+
+      <button type="submit" class="w-full py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">Iniciar sesión</button>
+    </form>
+
+    <div class="mt-4 text-center">
+      <span class="text-sm text-gray-600">¿No tienes cuenta? <a href="formulario.html" class="text-indigo-600 hover:text-indigo-800">Regístrate</a></span>
+    </div>
+  </div>
+
+</body>
+</html>
