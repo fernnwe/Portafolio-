@@ -302,7 +302,7 @@ footer p {
     max-width: 400px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
     font-size: 18px;
-    color: #333;
+    color: currentColor;
 }
 
 .myButton {
