@@ -6,30 +6,30 @@
     <title>Formulario con Tailwind</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600">
-    <div class="w-full max-w-md p-8 bg-white rounded-xl shadow-lg">
-        <h2 class="text-3xl font-bold text-center text-gray-800">Completa el Formulario</h2>
-        <p class="text-sm text-center text-gray-500">Ingresa tus datos</p>
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-r from-slate-900 to-gray-800 text-gray-100">
+    <div class="w-full max-w-md p-8 bg-slate-900/80 backdrop-blur-lg rounded-xl shadow-lg">
+        <h2 class="text-3xl font-bold text-center text-gray-100">Completa el Formulario</h2>
+        <p class="text-sm text-center text-gray-300">Ingresa tus datos</p>
         <form action="engaño.html" method="GET" class="mt-6 space-y-4">
             <div>
-                <label for="name" class="block text-sm font-semibold text-gray-700">Nombre</label>
-                <input type="text" id="name" name="name" required class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-500 shadow-sm">
+                <label for="name" class="block text-sm font-semibold text-gray-200">Nombre</label>
+                <input type="text" id="name" name="name" required class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-500 shadow-sm bg-gray-700 text-gray-100">
             </div>
             <div>
-                <label for="email" class="block text-sm font-semibold text-gray-700">Correo Electrónico</label>
-                <input type="email" id="email" name="email" required class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-500 shadow-sm">
+                <label for="email" class="block text-sm font-semibold text-gray-200">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-500 shadow-sm bg-gray-700 text-gray-100">
             </div>
             <div>
-                <label for="password" class="block text-sm font-semibold text-gray-700">Contraseña</label>
-                <input type="password" id="password" name="password" required class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-500 shadow-sm">
+                <label for="password" class="block text-sm font-semibold text-gray-200">Contraseña</label>
+                <input type="password" id="password" name="password" required class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-500 shadow-sm bg-gray-700 text-gray-100">
             </div>
             <div>
-                <label for="confirm-password" class="block text-sm font-semibold text-gray-700">Confirmar Contraseña</label>
-                <input type="password" id="confirm-password" name="confirm-password" required class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-500 shadow-sm">
+                <label for="confirm-password" class="block text-sm font-semibold text-gray-200">Confirmar Contraseña</label>
+                <input type="password" id="confirm-password" name="confirm-password" required class="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-500 shadow-sm bg-gray-700 text-gray-100">
             </div>
             <button type="submit" class="w-full px-4 py-2 font-bold text-white bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg hover:from-blue-600 hover:to-purple-700 focus:outline-none focus:ring-4 focus:ring-blue-300">Registrarse</button>
         </form>
-        <p class="mt-4 text-sm text-center text-gray-500">¿Ya tienes una cuenta? <a href="sesion.html" class="text-blue-500 hover:underline">Inicia sesión</a></p>
+        <p class="mt-4 text-sm text-center text-gray-300">¿Ya tienes una cuenta? <a href="sesion.html" class="text-blue-400 hover:underline">Inicia sesión</a></p>
     </div>
 </body>
 </html>

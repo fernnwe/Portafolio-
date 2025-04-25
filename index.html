@@ -1,154 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Fernando Aguirre</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="JS/script.js"></script>
-</head>
-<body>
-
-    <nav>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        <ul class="menu">
-            <li><a href="#sobre-mi">Sobre Mí</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="formulario.html">Formulario</a></li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio | Fernando Aguirre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gradient-to-r from-slate-900 to-gray-800 text-gray-100">
+    <!-- Navbar -->
+    <nav
+      class="fixed top-0 inset-x-0 z-50 bg-slate-900/80 backdrop-blur-lg shadow-lg"
+    >
+      <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+        <h1 class="text-xl font-bold">Fernando Aguirre</h1>
+        <div class="hidden md:flex gap-6">
+          <a href="#sobre-mi" class="hover:text-blue-400">Sobre Mí</a>
+          <a href="#habilidades" class="hover:text-blue-400">Habilidades</a>
+          <a href="#proyectos" class="hover:text-blue-400">Proyectos</a>
+          <a href="#contacto" class="hover:text-blue-400">Contacto</a>
+          <a href="formulario.html" class="hover:text-blue-400">Formulario</a>
+        </div>
+      </div>
     </nav>
 
-    <header id="principal">
-        <div class="foto-perfil">
-            <img src="IMG/foto.jpg" alt="Fernando Aguirre" />
-        </div>
-        <h1>Fernando Aguirre</h1>
-        <p>Estudiante de Ingeniería en Computación y Mercadotecnia</p>
+    <!-- Hero -->
+    <header
+      class="min-h-screen flex flex-col justify-center items-center text-center bg-[url('IMG/bg.jpg')] bg-cover bg-center"
+    >
+      <div
+        class="bg-black/60 p-10 rounded-3xl backdrop-blur-md shadow-2xl max-w-lg"
+      >
+        <img
+          src="IMG/foto.jpg"
+          class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-500"
+        />
+        <h2 class="text-4xl font-extrabold">Fernando Aguirre</h2>
+        <p class="mt-2 text-gray-300">
+          Estudiante de Ingeniería en Computación & Mercadotecnia
+        </p>
+        <a
+          href="#contacto"
+          class="mt-6 inline-block px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full font-semibold shadow-lg"
+          >¡Conectemos!</a
+        >
+      </div>
     </header>
-    
-    <section id="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <p>Soy un apasionado de la tecnología y el desarrollo de software, actualmente estudiando Ingeniería en Computación y Mercadotecnia.</p>
-    </section>
-    
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Desarrollo web (HTML, CSS, JavaScript, Tailwind CSS, Boostrap)</li>
-            <li>Programación en Python, Java, Javascript, Kotlin, Dart</li>
-            <li>Base de datos mysql</li>
-            <li>Control de versiones (GIT)</li>
-        </ul>
-    </section>
-    
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        
-        <div class="proyecto">
-            <h3>MKDigitalNic</h3>
-            <a href="https://mk-digital-nic.netlify.app/" target="_blank">
-                <img src="IMG/mkdigital.png" alt="Proyecto 1" class="imagen-proyecto" />
-            </a>
-            <p>MkDigitalNic es una página corportativa desarrollada con: HTML, CSS y Javascript.</p>
-        </div>
-        
-        <div class="proyecto">
-            <h3>SimpleSkincare</h3>
-            <a href="https://simple-skincare-nic.netlify.app/" target="_blank">
-                <img src="IMG/skincare.png" alt="Proyecto 2" class="imagen-proyecto" />
-            </a>
-            <p>SimpleSkincare es una pagina corporativa desarrollada con: HTML, CSS y Javascript</p>
-        </div>
 
-        <div class="proyecto">
-            <h3>Cartelera de cine</h3>
-            <a href="https://cartelera-cassex-replica.netlify.app/" target="_blank">
-                <img src="IMG/cartelera.png" alt="proyecto 3" class="imagen-proyecto">
-            </a>
-            <p>Esta es una copia de cartelera de cine desarrollada con HTML, CSS y Javascript</p>
-
-        </div>
-
-        <div class="proyecto">
-            <h3>Punto de venta</h3>
-            <a href="https://puntodeventa-beta.netlify.app/" target="_blank">
-                <img src="IMG/p.venta.png" alt="proyecto 3" class="imagen-proyecto">
-            </a>
-            <p>Punto de venta desarrollado con HTML, CSS y javacript</p>
-
-        </div>
-
-        
-        <div class="proyecto">
-            <h3>Contador JS</h3>
-            <a href="https://texto-contador.netlify.app/" target="_blank">
-                <img src="IMG/contador.png" alt="proyecto 3" class="imagen-proyecto">
-            </a>
-            <p>Contador desarrollado con: HTML, CSS y Javascript</p>
-
-        </div>
-
-        <div class="proyecto">
-            <h3>Curso de javacript - En proceso</h3>
-            <a href="https://github.com/fernnwe/Curso-Javascript" target="_blank">
-                <img src="IMG/curso.png" alt="Proyecto 4" class="imagen-proyecto">
-
-            </a>
-            <p>Curso de Javascript en proceso</p>
-        </div>
-
-        <div class="proyecto">
-            <h3>App multiplataforma Dart y Flutter</h3>
-            <a href="https://github.com/fernnwe/App-Dart-Flutter" target="_blank">
-                <img src="IMG/app dart.png" alt="proyecto 5" class="imagen-proyecto">
-            </a>
-            <p>App multiplataforma desarrollada con Dart y Flutter</p>
-
-        </div>
-
-        <div class="proyecto">
-            <h3>Página Corporativa - Ingenieria</h3>
-            <a href="https://servicio-ingenieria.netlify.app/" target="_blank">
-                <img src="IMG/ingenieria.png" alt="proyecto 6" class="imagen-proyecto">
-            </a>
-            <p>Pagina Corporativa desarrollada con HTML5, CSS y Javascript</p>
-
-        </div>
+    <!-- Sobre Mi -->
+    <section id="sobre-mi" class="py-20 px-6 max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Sobre Mí</h2>
+      <p class="text-lg text-gray-300">
+        Soy un apasionado de la tecnología y el desarrollo de software, actualmente estudiando Ingeniería en Computación y Mercadotecnia.
+      </p>
     </section>
 
-    <section id="tecnologias">
-        <h2>Tecnologías</h2>
-        <ul>
-            <li class="fa-brands fa-python"></li>
-            <li class="fa-brands fa-js"></li>
-            <li class="fa-brands fa-node"></li>
-            <li class="fa-brands fa-angular"></li>
-            <li class="fa-brands fa-react"></li>
-            <li class="fa-brands fa-java"></li>
-            <li class="fa-brands fa-aws"></li>
-            <li class="fa-solid fa-database"></li>
-            <li class="fa-brands fa-git-alt"></li>
-            <li class="fa-brands fa-github"></li>
-        </ul> 
-        <a href="PDF/CV.pdf" class="myButton">Descargar CV</a>
+    <!-- Habilidades -->
+    <section id="habilidades" class="py-20 bg-gray-900">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8">Habilidades</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div class="bg-slate-800 p-6 rounded-xl shadow text-center">
+            <i class="fa-brands fa-html5 text-4xl text-orange-500"></i>
+            <p class="mt-2">HTML</p>
+          </div>
+          <div class="bg-slate-800 p-6 rounded-xl shadow text-center">
+            <i class="fa-brands fa-css3-alt text-4xl text-blue-500"></i>
+            <p class="mt-2">CSS</p>
+          </div>
+          <div class="bg-slate-800 p-6 rounded-xl shadow text-center">
+            <i class="fa-brands fa-js text-4xl text-yellow-400"></i>
+            <p class="mt-2">JavaScript</p>
+          </div>
+          <div class="bg-slate-800 p-6 rounded-xl shadow text-center">
+            <i class="fa-brands fa-python text-4xl text-blue-300"></i>
+            <p class="mt-2">Python</p>
+          </div>
+          <div class="bg-slate-800 p-6 rounded-xl shadow text-center">
+            <i class="fa-brands fa-java text-4xl text-red-600"></i>
+            <p class="mt-2">Java</p>
+          </div>
+          <div class="bg-slate-800 p-6 rounded-xl shadow text-center">
+            <i class="fa-brands fa-git-alt text-4xl text-orange-400"></i>
+            <p class="mt-2">Git</p>
+          </div>
+          <div class="bg-slate-800 p-6 rounded-xl shadow text-center">
+            <i class="fa-solid fa-database text-4xl text-green-400"></i>
+            <p class="mt-2">MySQL</p>
+          </div>
+          <div class="bg-slate-800 p-6 rounded-xl shadow text-center">
+            <i class="fa-brands fa-bootstrap text-4xl text-purple-500"></i>
+            <p class="mt-2">Bootstrap</p>
+          </div>
+        </div>
+      </div>
     </section>
-    
-    
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Email: <a href="mailto:yassir468124@gmail.com">yassir468124@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/fernando-aguirre-089b57303/" target="_blank">Fernando Aguirre</a></p>
-        <i class="fa-brands fa-whatsapp"></i>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="py-20">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8">Proyectos</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg">
+            <a href="https://mk-digital-nic.netlify.app/" target="_blank"><img src="IMG/mkdigital.png" /></a>
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">MKDigitalNic</h3>
+              <p class="text-sm text-gray-400">Página corporativa con HTML, CSS y JS</p>
+            </div>
+          </div>
+          <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg">
+            <a href="https://simple-skincare-nic.netlify.app/" target="_blank"><img src="IMG/skincare.png" /></a>
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">SimpleSkincare</h3>
+              <p class="text-sm text-gray-400">Página corporativa con HTML, CSS y JS</p>
+            </div>
+          </div>
+          <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg">
+            <a href="https://cartelera-cassex-replica.netlify.app/" target="_blank"><img src="IMG/cartelera.png" /></a>
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">Cartelera de cine</h3>
+              <p class="text-sm text-gray-400">Replica de cartelera con HTML, CSS y JS</p>
+            </div>
+          </div>
+          <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg">
+            <a href="https://puntodeventa-beta.netlify.app/" target="_blank"><img src="IMG/p.venta.png" /></a>
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">Punto de venta</h3>
+              <p class="text-sm text-gray-400">Sistema con HTML, CSS y JS</p>
+            </div>
+          </div>
+          <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg">
+            <a href="https://texto-contador.netlify.app/" target="_blank"><img src="IMG/contador.png" /></a>
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">Contador JS</h3>
+              <p class="text-sm text-gray-400">Contador hecho con HTML, CSS y JS</p>
+            </div>
+          </div>
+          <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg">
+            <a href="https://github.com/fernnwe/Curso-Javascript" target="_blank"><img src="IMG/curso.png" /></a>
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">Curso de JavaScript</h3>
+              <p class="text-sm text-gray-400">Curso en proceso</p>
+            </div>
+          </div>
+          <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg">
+            <a href="https://github.com/fernnwe/App-Dart-Flutter" target="_blank"><img src="IMG/app dart.png" /></a>
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">App Dart & Flutter</h3>
+              <p class="text-sm text-gray-400">App multiplataforma</p>
+            </div>
+          </div>
+          <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg">
+            <a href="https://servicio-ingenieria.netlify.app/" target="_blank"><img src="IMG/ingenieria.png" /></a>
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">Página Corporativa Ingeniería</h3>
+              <p class="text-sm text-gray-400">HTML5, CSS y JS</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
-    <footer>
-        <p>&copy; 2025 Fernando Aguirre. Todos los derechos reservados.</p>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 bg-gray-900">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">Contacto</h2>
+        <p>Email: <a href="mailto:yassir468124@gmail.com" class="text-blue-400">yassir468124@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/fernando-aguirre-089b57303/" target="_blank" class="text-blue-400">Fernando Aguirre</a></p>
+        <div class="flex justify-center gap-6 mt-4 text-2xl">
+          <a href="#" class="hover:text-green-400"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://github.com/fernnwe" target="_blank" class="hover:text-gray-400"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="hover:text-blue-600"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="hover:text-pink-500"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a href="PDF/CV.pdf" class="mt-6 inline-block px-6 py-2 bg-blue-500 hover:bg-blue-600 rounded-full font-semibold shadow">Descargar CV</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-black text-center">
+      <p>&copy; 2025 Fernando Aguirre. Todos los derechos reservados.</p>
     </footer>
-</body>
+  </body>
 </html>
