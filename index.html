@@ -4,249 +4,136 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio | Fernando Aguirre</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="bg-gradient-to-r from-slate-900 to-gray-800 text-gray-100">
-    <!-- Navbar -->
-    <nav
-      class="fixed top-0 inset-x-0 z-50 bg-slate-900/80 backdrop-blur-lg shadow-lg"
-    >
-      <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-        <h1 class="text-xl font-bold">Fernando Aguirre</h1>
-        <!-- Menú hamburguesa -->
-        <div class="md:hidden flex items-center">
-          <button id="menu-toggle" class="text-white">
-            <i class="fa-solid fa-bars text-2xl"></i>
-          </button>
-        </div>
-        <div id="menu" class="hidden md:flex gap-6">
-          <a href="#sobre-mi" class="hover:text-blue-400">Sobre Mí</a>
-          <a href="#habilidades" class="hover:text-blue-400">Habilidades</a>
-          <a href="#proyectos" class="hover:text-blue-400">Proyectos</a>
-          <a href="#contacto" class="hover:text-blue-400">Contacto</a>
-          <a href="formulario.html" class="hover:text-blue-400">Formulario</a>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <h1>Fernando Aguirre</h1>
+        <button id="menu-toggle" class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div id="menu" class="menu">
+          <a href="#sobre-mi">Sobre Mí</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+          <a href="formulario.html">Formulario</a>
         </div>
       </div>
-      <!-- Menú desplegable en móvil -->
-      <div id="mobile-menu" class="md:hidden bg-slate-900 text-gray-100 w-full hidden">
-        <div class="flex flex-col items-center py-4">
-          <a href="#sobre-mi" class="py-2 hover:text-blue-400">Sobre Mí</a>
-          <a href="#habilidades" class="py-2 hover:text-blue-400">Habilidades</a>
-          <a href="#proyectos" class="py-2 hover:text-blue-400">Proyectos</a>
-          <a href="#contacto" class="py-2 hover:text-blue-400">Contacto</a>
-          <a href="formulario.html" class="py-2 hover:text-blue-400">Formulario</a>
-        </div>
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+        <a href="formulario.html">Formulario</a>
       </div>
     </nav>
 
-    <!-- Hero -->
-    <header
-      class="min-h-screen flex flex-col justify-center items-center text-center bg-[url('IMG/bg.jpg')] bg-cover bg-center"
-    >
-      <div
-        class="bg-black/60 p-10 rounded-3xl backdrop-blur-md shadow-2xl max-w-lg"
-      >
-        <img
-          src="IMG/perfil.jpg"
-          class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-500"
-        />
-        <h2 class="text-4xl font-extrabold">Fernando Aguirre</h2>
-        <p class="mt-2 text-gray-300">
-          Estudiante de Ingeniería en Computación & Mercadotecnia
-        </p>
-        <a
-          href="#contacto"
-          class="mt-6 inline-block px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full font-semibold shadow-lg"
-          >¡Conectemos!</a
-        >
+    <header class="hero">
+      <div class="hero-content">
+        <img src="IMG/perfil.jpg" class="perfil-img" />
+        <h2>Fernando Aguirre</h2>
+        <p>Estudiante de Ingeniería en Computación & Mercadotecnia</p>
+        <a href="#contacto" class="btn">¡Conectemos!</a>
       </div>
     </header>
 
     <!-- Sobre Mi -->
-    <section id="sobre-mi" class="py-20 px-6 max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-4">Sobre Mí</h2>
-      <p class="text-lg text-gray-300">
-        Soy un apasionado de la tecnología y el desarrollo de software, actualmente estudiando Ingeniería en Computación y Mercadotecnia.
-      </p>
+    <section id="sobre-mi" class="section">
+      <h2>Sobre Mí</h2>
+      <p>Soy un apasionado de la tecnología y el desarrollo de software, actualmente estudiando Ingeniería en Computación y Mercadotecnia. Me encanta crear soluciones digitales que marquen la diferencia en la vida de las personas y los negocios. He trabajado en múltiples proyectos tanto personales como académicos, incluyendo sitios web, aplicaciones y sistemas de facturación.</p>
     </section>
 
     <!-- Habilidades -->
-<section id="habilidades" class="py-20 bg-gray-900">
-  <div class="max-w-5xl mx-auto">
-    <h2 class="text-3xl font-bold mb-8 text-center text-gray-100">Habilidades</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-      <div class="bg-slate-800 p-6 rounded-xl shadow text-center transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-        <i class="fa-brands fa-html5 text-4xl text-orange-500"></i>
-        <p class="mt-2 text-gray-300">HTML</p>
+    <section id="habilidades" class="section dark">
+      <h2>Habilidades en proceso</h2>
+      <div class="skills-grid">
+        <div><i class="fa-brands fa-html5"></i><p>HTML</p></div>
+        <div><i class="fa-brands fa-css3-alt"></i><p>CSS</p></div>
+        <div><i class="fa-brands fa-square-js"></i><p>JavaScript</p></div>
+        <div><i class="fa-brands fa-react"></i><p>React</p></div>
+        <div><i class="fa-brands fa-node-js"></i><p>Node.js</p></div>
+        <div><i class="fa-solid fa-database"></i><p>PostgreSQL</p></div>
+        <div><i class="fa-brands fa-python"></i><p>Python</p></div>
+        <div><i class="fa-solid fa-code"></i><p>Django</p></div>
+        <div><i class="fa-brands fa-java"></i><p>Java</p></div>
+        <div><i class="fa-brands fa-git-alt"></i><p>Git</p></div>
+        <div><i class="fa-brands fa-wordpress"></i><p>Wordpress</p></div>
+        <div><i class="fa-brands fa-facebook"></i><p>Facebook ADS</p></div>
+        <div><i class="fa-solid fa-code-branch"></i><p>Razonamiento lógico</p></div>
       </div>
-      <div class="bg-slate-800 p-6 rounded-xl shadow text-center transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-        <i class="fa-brands fa-css3-alt text-4xl text-blue-500"></i>
-        <p class="mt-2 text-gray-300">CSS</p>
-      </div>
-      <div class="bg-slate-800 p-6 rounded-xl shadow text-center transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-        <i class="fa-brands fa-js text-4xl text-yellow-400"></i>
-        <p class="mt-2 text-gray-300">JavaScript</p>
-      </div>
-      <div class="bg-slate-800 p-6 rounded-xl shadow text-center transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-        <i class="fa-brands fa-python text-4xl text-blue-300"></i>
-        <p class="mt-2 text-gray-300">Python</p>
-      </div>
-      <div class="bg-slate-800 p-6 rounded-xl shadow text-center transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-        <i class="fa-brands fa-java text-4xl text-red-600"></i>
-        <p class="mt-2 text-gray-300">Java</p>
-      </div>
-      <div class="bg-slate-800 p-6 rounded-xl shadow text-center transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-        <i class="fa-brands fa-git-alt text-4xl text-orange-400"></i>
-        <p class="mt-2 text-gray-300">Git</p>
-      </div>
-      <div class="bg-slate-800 p-6 rounded-xl shadow text-center transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-        <i class="fa-solid fa-database text-4xl text-green-400"></i>
-        <p class="mt-2 text-gray-300">MySQL</p>
-      </div>
-      <div class="bg-slate-800 p-6 rounded-xl shadow text-center transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-        <i class="fa-brands fa-bootstrap text-4xl text-purple-500"></i>
-        <p class="mt-2 text-gray-300">Bootstrap</p>
-      </div>
-      <!-- Nueva habilidad: C++ -->
-      <div class="bg-slate-800 p-6 rounded-xl shadow text-center transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-        <i class="fa-solid fa-code text-4xl text-indigo-400"></i>
-        <p class="mt-2 text-gray-300">C++</p>
-      </div>
-      <!-- Nueva habilidad: Office -->
-      <div class="bg-slate-800 p-6 rounded-xl shadow text-center transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-        <i class="fa-solid fa-file-word text-4xl text-blue-400"></i>
-        <p class="mt-2 text-gray-300">Paquete Office</p>
-      </div>
-      <!-- Nueva habilidad: Tailwind CSS -->
-      <div class="bg-slate-800 p-6 rounded-xl shadow text-center transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-        <i class="fa-solid fa-wind text-4xl text-teal-400"></i>
-        <p class="mt-2 text-gray-300">Tailwind CSS</p>
-      </div>
-      <!-- Nueva habilidad: Facebook ADS -->
-      <div class="bg-slate-800 p-6 rounded-xl shadow text-center transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-        <i class="fa-brands fa-facebook text-4xl text-blue-600"></i>
-        <p class="mt-2 text-gray-300">Facebook ADS</p>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- Proyectos -->
-    <section id="proyectos" class="py-20">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold mb-8 text-center text-gray-100">Proyectos</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-            <a href="https://mkdigitalnic.netlify.app" target="_blank"><img src="IMG/mkdigitalnic.png" class="w-full" /></a>
-            <div class="p-4">
-              <h3 class="text-xl font-semibold text-gray-100">Mkdigitalnic</h3>
-              <p class="text-sm text-gray-400">Página corporativa con HTML, Taildwind css y JS</p>
-            </div>
-          </div>
-          <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-            <a href="https://simple-skincare-nic.netlify.app/" target="_blank"><img src="IMG/skincare.png" class="w-full" /></a>
-            <div class="p-4">
-              <h3 class="text-xl font-semibold text-gray-100">SimpleSkincare</h3>
-              <p class="text-sm text-gray-400">Página corporativa con HTML, CSS y JS</p>
-            </div>
-          </div>
-          <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-            <a href="https://cartelera-cassex-replica.netlify.app/" target="_blank"><img src="IMG/cartelera.png" class="w-full" /></a>
-            <div class="p-4">
-              <h3 class="text-xl font-semibold text-gray-100">Cartelera de cine</h3>
-              <p class="text-sm text-gray-400">Replica de cartelera con HTML, CSS y JS</p>
-            </div>
-          </div>
-          <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-            <a href="https://puntodeventa-beta.netlify.app/" target="_blank"><img src="IMG/p.venta.png" class="w-full" /></a>
-            <div class="p-4">
-              <h3 class="text-xl font-semibold text-gray-100">Punto de venta</h3>
-              <p class="text-sm text-gray-400">Sistema con HTML, CSS y JS</p>
-            </div>
-          </div>
-          <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-            <a href="https://texto-contador.netlify.app/" target="_blank"><img src="IMG/contador.png" class="w-full" /></a>
-            <div class="p-4">
-              <h3 class="text-xl font-semibold text-gray-100">Contador JS</h3>
-              <p class="text-sm text-gray-400">Contador hecho con HTML, CSS y JS</p>
-            </div>
-          </div>
-          <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-            <a href="https://github.com/fernnwe/Curso-Javascript" target="_blank"><img src="IMG/curso.png" class="w-full" /></a>
-            <div class="p-4">
-              <h3 class="text-xl font-semibold text-gray-100">Curso de JavaScript</h3>
-              <p class="text-sm text-gray-400">Curso en proceso</p>
-            </div>
-          </div>
-          <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-            <a href="https://github.com/fernnwe/App-Dart-Flutter" target="_blank"><img src="IMG/app dart.png" class="w-full" /></a>
-            <div class="p-4">
-              <h3 class="text-xl font-semibold text-gray-100">App Dart & Flutter</h3>
-              <p class="text-sm text-gray-400">App multiplataforma</p>
-            </div>
-          </div>
-          <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-            <a href="https://mkdservices.netlify.app" target="_blank"><img src="IMG/mkservices.png" class="w-full" /></a>
-            <div class="p-4">
-              <h3 class="text-xl font-semibold text-gray-100">Página Corporativa - Servicios Mkdigitalnic</h3>
-              <p class="text-sm text-gray-400">Página corporativa con HTML, Taildwind css y JS</p>
-            </div>
-          </div>
-          <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-            <a href="https://gymsex2025.netlify.app" target="_blank"><img src="IMG/calculadora.png" class="w-full" /></a>
-            <div class="p-4">
-              <h3 class="text-xl font-semibold text-gray-100">Calculadora de Peso y calorias</h3>
-              <p class="text-sm text-gray-400">Página con HTML, Taildwind css y JS</p>
-            </div>
+    <section id="proyectos" class="section">
+      <h2>Proyectos</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <img src="IMG/mkdigitalnic.png" alt="MKDigitalNic">
+          <h3>MKDigitalNic</h3>
+          <p>Agencia de desarrollo de páginas web de presentación para negocios y profesionales.</p>
         </div>
-        <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:translate-y-[-10px] hover:shadow-xl">
-            <a href="https://agendatucorte.netlify.app" target="_blank"><img src="IMG/barberia.png" class="w-full" /></a>
-            <div class="p-4">barberia - Agenda de citas</h3>
-              <p class="text-sm text-gray-400">Página con HTML, Taildwind css y JS</p>
-            </div>
+        <div class="project">
+          <img src="IMG/skincare.png" alt="SimpleSkincare">
+          <h3>SimpleSkincare</h3>
+          <p>Tienda en línea para una marca de cuidado de la piel, con pasarela de pagos.</p>
+        </div>
+        <div class="project">
+          <img src="IMG/cartelera.png" alt="Cartelera de Cine">
+          <h3>Cartelera de Cine</h3>
+          <p>Aplicación para mostrar películas en cartelera y permitir valoraciones.</p>
+        </div>
+        <div class="project">
+          <img src="IMG/p.venta.png" alt="Punto de Venta">
+          <h3>Punto de Venta</h3>
+          <p>Sistema de facturación e inventario con informes y control de clientes.</p>
+        </div>
+        <div class="project">
+          <img src="IMG/calculadora.png" alt="Contador JS">
+          <h3>Calculadora de peso y calorias</h3>
+          <p>Mini app para contar clics usando JavaScript puro.</p>
+        </div>
+        <div class="project">
+          <img src="IMG/curso.png" alt="Jafet Academy">
+          <h3>Curso de Javascript</h3>
+          <p>Plataforma de aprendizaje de JavaScript desde cero. En desarrollo.</p>
+        </div>
+        <div class="project">
+          <img src="IMG/app dart.png" alt="Flutter App">
+          <h3>App Multiplataforma</h3>
+          <p>Aplicación móvil desarrollada con Dart y Flutter.</p>
+        </div>
+        <div class="project">
+          <img src="IMG/barberia.png" alt="Sitio Corporativo">
+          <h3>Agenda de citas para barberia</h3>
+          <p>Diseño y desarrollo de sitio de citas para barberia.</p>
+        </div>
       </div>
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="py-20 bg-slate-900">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-gray-100 mb-6">Contacto</h2>
-        <p class="text-lg text-gray-300 mb-6">¿Tienes algún proyecto en mente? ¡Estoy listo para ayudarte!</p>
-        <a href="mailto:yassir468124@gmail.com" class="inline-block px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full font-semibold text-gray-100 shadow-lg"
-          >Enviar Correo</a
-        >
-        <div class="mt-6">
-          <a href="https://github.com/fernnwe" target="_blank" class="text-gray-300 hover:text-blue-500 mr-6">
-            <i class="fa-brands fa-github text-2xl"></i>
-          </a>
-          <a href="https://www.facebook.com/fernando.aguirre.54278" target="_blank" class="text-gray-300 hover:text-blue-500 mr-6">
-            <i class="fa-brands fa-facebook text-2xl"></i>
-          </a>
-          <a href="https://www.instagram.com/fernandoaguirre183/" target="_blank" class="text-gray-300 hover:text-blue-500 mr-6">
-            <i class="fa-brands fa-instagram text-2xl"></i>
-          </a>
-        </div>
+    <section id="contacto" class="section dark">
+      <h2>Contacto</h2>
+      <p>¿Tienes algún proyecto en mente? ¡Estoy listo para ayudarte!</p>
+      <a href="mailto:yassir468124@gmail.com" class="btn">Enviar Correo</a>
+      <div class="social-icons">
+        <a href="https://github.com/fernnwe" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.facebook.com/fernando.aguirre.54278" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/fernandoaguirre183/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </section>
 
-    <script>
-      document
-        .getElementById("menu-toggle")
-        .addEventListener("click", function () {
-          var mobileMenu = document.getElementById("mobile-menu");
-          mobileMenu.classList.toggle("hidden");
-        });
-    </script>
-
     <!-- Footer -->
-<footer class="bg-slate-900 py-4 text-center text-gray-300">
-    <p>Desarrollado por <span class="font-semibold text-blue-500">Fernando Aguirre</span></p>
-  </footer>
-  
+    <footer class="footer">
+      <p>Desarrollado por <span>Fernando Aguirre</span></p>
+    </footer>
+
+    <script>
+      document.getElementById("menu-toggle").addEventListener("click", function () {
+        document.getElementById("mobile-menu").classList.toggle("show");
+      });
+    </script>
   </body>
 </html>
